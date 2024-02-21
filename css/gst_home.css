@@ -38,24 +38,8 @@
     border-top: 1px solid grey;
   }
 
-
-
   .card {
     z-index: 0;
-  }
-
-  .dark_btn {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 50px;
-    width: 55px;
-    font-size: 20px;
-    border: none;
-    color: white;
-    background-color: #1371FD;
-
-
   }
 
   .dark {
