@@ -56,8 +56,10 @@
 
 body{
   padding-top: 80px;
- width: 50%;
+ width: 40%;
  margin: auto;
   }
-
+.mid_c_2 a{
+  width: 60% !important;
+}
 }
