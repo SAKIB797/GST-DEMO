@@ -104,23 +104,13 @@
 <!-- menu end  -->
 
 <!-- notice -->
-<div style="position: fixed; left: 0; right: 0; bottom: 0; width: 100%; text-align: center; padding: 8px; background-color: orange; color: white;">This website is under construction</div>
+<div style="position: fixed; left: 0; right: 0; bottom: 0; width: 100%; text-align: center; padding: 8px; background-color: red; color: white;">This website is under construction</div>
 
 <!-- body end -->
 
 
 <!-- script -->
 <script>
-
-    document.addEventListener('click', function (event) {
-        var menu = document.getElementById('menu');
-        var targetElement = event.target; // Clicked element
-
-        // Check if the menu is visible and the clicked element is not the menu and not a child of the menu
-        if (menu.classList.contains('menuVisible') && targetElement != menu && !menu.contains(targetElement)) {
-            menu.classList.remove('menuVisible'); // Hide the menu
-        }
-    });
 
     function openMenu() {
         var menu = document.getElementById("menu");
