@@ -5,84 +5,15 @@ body {
   background-color: #EEEEEE;
 }
 
-.asideHidden {
-  display: none;
-}
-
-.asideSTYLE {
-  display: block;
-  background-color: #285880;
-  width: 35%;
-  position: fixed;
-  border-radius: 5px;
-  z-index: 1;
-  right: 15px;
-}
-
-.asideSTYLE a:hover {
-  border-left: 3px solid red;
-}
 
 p {
   width: auto;
-}
-
-.asideSTYLE a {
-  display: block;
-  padding: 12px;
-  text-decoration: none;
-  color: white;
-  font-weight: 500;
-  font-family: Arial, sans-serif;
-
-}
-
-.asideSTYLE hr {
-  margin: 0;
-}
-
-.dark_btn {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 50px;
-  width: 55px;
-  font-size: 20px;
-  border: none;
-  color: white;
-  background-color: #1371FD;
-
-
 }
 
 .main_content {
   margin: 0px 20px 0px 20px;
 }
 
-.stickyhead {
-  color: white;
-  position: fixed;
-  background-color: #285880;
-  top: 0;
-  left: 0;
-  width: 100%;
-  text-align: center;
-  height: 50px;
-  line-height: 50px;
-  font-weight: bold;
-  z-index: 100;
-}
-
-.footer {
-  background-color: indianred;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  text-align: center;
-}
-
-/****/
 /******recovery and login section *******/
 
 
@@ -110,6 +41,7 @@ p {
   margin-top: 20px;
   border-radius: 5px;
   height: 100%;
+  
 }
 
 .recovery_btn_group {
@@ -132,12 +64,13 @@ p {
 
 .login_btn_group {
   text-align: center;
-  margin: 10px;
+  
 }
 
 .login_btn {
   font-size: 14px;
   margin: 5px;
+  margin-bottom: 15px;
   width: auto;
   padding: 8px;
   height: 32px;
@@ -184,10 +117,15 @@ label {
   font-size: 14px;
   font-weight: bold;
 }
-
+.line{
+  margin: 15px -15px;
+}
 /******recovery and login section end.. *******/
 
-/*********css for big screen ******/
+
+
+
+/* Adjust media query for big screens */
 @media only screen and (min-width: 500px) {
   body {
     display: flex;
@@ -195,85 +133,10 @@ label {
     padding-top: 120px;
   }
 
-  .stickyhead a {
-    line-height: 100px;
-  }
-
- 
-
-  .dark_btn {
-    height: 100px;
-    width: 105px;
-    font-size: 40px;
-    z-index: 120;
-  }
-
-  hr {
-    display: none;
-  }
-
-  .asideHidden {
-    background-color: dodgerblue;
-    height: 40px;
-    position: fixed;
-    width: 100%;
-    display: block;
-    top: 100px;
-    left: 0;
-    z-index: 100;
-  }
-
-nav a:hover {
-    background-color: grey;
-  }
-
-  .main_content {
-    margin: 50px;
-
-  }
-
-  nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    height: 100%;
-    align-items: center; /* Vertically center align items */
-}
-
-nav a {
-    text-decoration: none;
-    color: white;
-    font-family: Arial, sans-serif;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-
-  .head_btn {
-    display: none;
-  }
-
-  .stickyhead {
-
-    display: fixed;
-    width: 100%;
-    height: 100px;
-    line-height: 100px;
-    top: 0;
-    left: 0;
-    font-size: 30px;
-
-    font-weight: bold;
-  }
-
   .recovery_and_login {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-evenly;
-
     border: 1px solid gray;
     background-color: white;
     position: relative;
@@ -283,17 +146,21 @@ nav a {
     position: absolute;
     top: 5px;
     left: 10px;
-
   }
 
   .recovery {
     border: 1px solid black;
     border-radius: 5px;
     padding: 0;
-
+ 
+  
   }
 
+  .line{
+    display: none;
+  }
 }
+
 
 .dark {
   background-color: #1D2A35;
