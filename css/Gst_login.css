@@ -162,7 +162,7 @@ label {
 }
 
 
-.dark {
+/* .dark {
   background-color: #1D2A35;
   border: 1px solid black;
 }
@@ -177,10 +177,7 @@ label {
   color: #D5D6D6;
   border: none;
 
-}
+} */
 
-/********css for big screen end*/
 
-img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {
-  display: none;
-}
+

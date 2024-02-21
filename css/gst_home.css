@@ -1,5 +1,5 @@
   body {
-    padding: 65px 15px 10px 15px;
+    padding: 65px 20px 10px 20px;
     background-color: #EEEEEE;
     font-family: 'Times New Roman', serif;
   }
@@ -42,7 +42,7 @@
     z-index: 0;
   }
 
-  .dark {
+  /* .dark {
     background-color: #1D2A35;
   }
 
@@ -50,4 +50,14 @@
     background-color: #38444D;
     color: #D5D6D6;
 
+  } */
+
+  @media only screen and (min-width: 500px){
+
+body{
+  padding-top: 80px;
+ width: 80%;
+ margin: auto;
   }
+
+}
